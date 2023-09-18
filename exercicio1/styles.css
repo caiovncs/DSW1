@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+a, li {
+  list-style: none;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.listaDeProdutos {
+  flex-direction: column;
+}
+
+li > p {
+  font-size: 1.1rem;
+}
