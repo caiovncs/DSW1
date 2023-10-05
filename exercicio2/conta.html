@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conta</title>
+  <link rel="stylesheet" href="conta.css">
+</head>
+<body>
+  <main>
+    <h1>Crie uma Nova Conta</h1>
+
+    <form action="/" method="post">
+      <fieldset id="AccountInputs">
+        <h2>Conta</h2>
+        <ul>
+          <li>
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+          </li>
+          <li>
+            <label for="lastname">Sobrenome</label>
+            <input type="text" id="lastname">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </li>
+          <li>
+            <label for="password">Senha</label>
+            <input type="password" id="password">
+          </li>
+          <li>
+            <label for="repeatpassword">Repita a senha</label>
+            <input type="password" id="repeatpassword">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset id="AddressInputs">
+        <h2>Endereço</h2>
+        <ul>
+          <li>
+            <label for="logradouro">Logradouro</label>
+            <input type="text" id="logradouro">
+          </li>
+          <li>
+            <label for="complemento">Complemento</label>
+            <input type="text" id="complemento">
+          </li>
+          <li>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade">
+          </li>
+          <li>
+            <label for="estados">Estado</label>
+            <select name="estados" id="estados" required>
+              <option value="" disabled selected>Selecione um estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>            
+          </li>
+          <li>
+            <label for="cep">CEP</label>
+            <input type="number" id="cep">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset id="ProfileInputs">
+        <h2>Perfil</h2>
+        <ul>
+          <li>
+            <label for="Foto">Foto</label>
+            <input type="file" id="Foto"><br>
+            <span>Tamanho máximo de 700k, JPG, GIF PNG.</span>
+          </li>
+          <li>
+            <label for="name2">Nome</label>
+            <input type="text" id="name2">
+          </li>
+          <li>
+            <label for="site">Site</label>
+            <input type="url" id="site">
+            <span>
+              Tem um site ou um blog? Coloque o endereço aqui.
+            </span>
+          </li>
+          <li>
+            <label for="biografia" class="biografialabel">Biografia</label>
+            <textarea name="biografia" id="biografia" cols="70" rows="10"></textarea>
+          </li>
+          <li>
+            <p>Gênero: </p>
+            <input type="radio" id="masculino" name="genero">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="outro" name="genero">
+            <label for="outro">Outro</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset id="ProfileInputs">
+        <h2>E-mails</h2>
+        <ul>
+          <li>
+            <input type="checkbox" id="termo1" required>
+            <label for="termo1">Tudo bem em enviar e-mails com mensagens de outros usuários.</label>
+          </li>
+          <li>
+            <input type="checkbox" id="termo2" required>
+            <label for="termo2">Tudo bem em enviar e-mails ocasionais com promoções sobre outros produtos.</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <input type="submit" name="create" id="create" value="Criar conta">
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>

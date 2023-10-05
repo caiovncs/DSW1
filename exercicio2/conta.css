@@ -1,0 +1,45 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 2rem;
+}
+
+
+fieldset {
+  padding: 1.5rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+li > span {
+  display: block;
+  margin: 0.8rem 0 0.8rem 0;
+}
+
+.biografialabel {
+  display: block;
+}
+
+p {
+  display: inline-block
+}
+
+input[type="submit"] {
+  padding: 0.8rem;
+  text-transform: uppercase;
+  border: 2px solid black;
+  cursor: pointer;
+}
